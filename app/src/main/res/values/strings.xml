@@ -4,8 +4,10 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
+    <string name="navbar_etusivu">Wallet</string>
+    <string name="navbar_purchase">Purchases</string>
+    <string name="_navbar_history">History</string>
 
-    <string name="hello_world">Hello world!</string>
 
     <string name="action_settings">Settings</string>
 </resources>
