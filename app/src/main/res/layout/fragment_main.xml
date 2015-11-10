@@ -1,17 +1,60 @@
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:background="#eaecee">
+    android:orientation="horizontal"
+    android:background="#eaecee"
+    android:weightSum="1">
+
+
 
     <TextView
-        android:id="@+id/Maintext"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/navbar_etusivu"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:layout_width="106dp"
+        android:layout_height="44dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/money_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/moneylabel"
 
-</LinearLayout>
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditMoney"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/moneylabel"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/currency"
+        android:id="@+id/currencyid"
+        android:layout_alignBottom="@+id/EditMoney"
+        android:layout_toEndOf="@+id/EditMoney" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/todayistext"
+        android:id="@+id/TodayisID"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/moneylabel"
+        android:textSize="30dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date"
+        android:id="@+id/DateView"
+        android:layout_below="@+id/TodayisID"
+        android:layout_alignStart="@+id/TodayisID"
+        android:textSize="37dp"/>
+
+</RelativeLayout>
